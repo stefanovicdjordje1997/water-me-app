@@ -1,0 +1,7 @@
+{
+  "name": "WaterMe",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
