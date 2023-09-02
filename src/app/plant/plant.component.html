@@ -1,0 +1,11 @@
+<ion-item>
+  <ion-avatar slot="start">
+    <img alt="Silhouette of a person's head" [src]="plant.picture" />
+  </ion-avatar>
+  <ion-label> {{plant.name}} </ion-label>
+  <ion-button slot="end" shape="round" fill="none" (click)="onAdd()" *ngIf="!plant.inGarden">
+    <ion-icon name="add-outline"></ion-icon>
+  </ion-button>
+  <ion-label slot="end" style="opacity: 50%; font-size: small" *ngIf="plant.inGarden">In garden</ion-label>
+
+</ion-item>

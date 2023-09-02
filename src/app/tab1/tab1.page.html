@@ -7,5 +7,6 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <app-plant *ngFor="let plant of plants" [plant]="plant" ></app-plant>
 
 </ion-content>
